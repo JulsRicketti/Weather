@@ -43,6 +43,9 @@ $(document).ready(function(){
 	
 	      $('#temp').append(temperature + " " + unitLabel);
 	      $('#conditions').append(weather.weather[0].description);
+	      $('#min').append(weather.main.temp_min + " "+unitLabel);
+	      $('#max').append(weather.main.temp_max + " "+unitLabel);
+	      $('#humidity').append(weather.main.humidity + "%");
 	      $('#wind').append(windDir + " " + weather.wind.speed + " knots");
 	      $('#postal').append(postal);
 
@@ -51,7 +54,7 @@ $(document).ready(function(){
   };
   
    function convertWindDirection(dir) {
-    var rose = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+    var rose = ['North', 'Northeast', 'East', 'Southeast', 'South', 'Southwest', 'West', 'Northwest'];
     var eightPoint = Math.floor(dir / 45);
     return rose[eightPoint];
   }
