@@ -1,0 +1,30 @@
+body{
+	 width: 800px;
+     margin: 0 auto;
+     background-color: #338899;
+     font-family: "Lucida Sans Unicode";
+}
+
+div, p{
+		text-align: center;
+}
+
+.weather-basic{
+	background-color: #33AAAA;
+	border-radius: 20px;
+
+}
+
+.location{
+	
+	font-size: 25px;
+
+}
+
+#min{
+	color: blue;
+}
+
+#max{
+	color: red;
+}

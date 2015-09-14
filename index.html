@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<!--JQuery -->
-			    <script src="js/jquery.js"></script>
+	
+	<title>Current Local Weather</title>
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
 	</head>
 	<body>
 		
 		<hr/>
-		<p>Current Location: <span id="address"></span></p>
+		<div class="location">
+			<span id="address"></span>
+		</div>
+		<hr/>
+				
+	<div class="weather-basic">			
+		<div id="icon"></div>
 		
-		<p>Weather: <div id="weather"></div></p>
-
-	<div id="icon"></div>
-	
-	<div id="temp"></div>
-	
-	<p>Possible variations:</p>
-	<p>Min: <span id="min"></span> Max: <span id="max"></span></p>
+		<div id="temp"></div>
+		
+		<div>Min: <span id="min"></span> Max: <span id="max"></span></div>
+	</div>
 	
 	<p>Conditions: <span id="conditions"></span></p>
 	
