@@ -46,7 +46,7 @@ $(document).ready(function(){
 	      $('#min').append(weather.main.temp_min + " "+unitLabel);
 	      $('#max').append(weather.main.temp_max + " "+unitLabel);
 	      $('#humidity').append(weather.main.humidity + "%");
-	      $('#wind').append(windDir + " " + weather.wind.speed + " knots");
+	      $('#wind').append(windDir + ", " + weather.wind.speed + " knots");
 	      $('#postal').append(postal);
 
     }, "jsonp");
