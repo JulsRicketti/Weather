@@ -2,19 +2,22 @@
 <html>
 	<head>
 			<!--JQuery -->
-	<script src="js/jquery.js"></script>
+			    <script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
 	</head>
 	<body>
-		<h3>Client side IP geolocation using <a href="http://ipinfo.io">ipinfo.io</a></h3>
 		
 		<hr/>
-		<div id="ip"></div>
-		<div id="address"></div>
-		<hr/>Full response: <pre id="details"></pre>
+		<p>Location: <div id="address"></div></p>
+		
+		<p>Weather: <div id="weather"></div></p>
 
-
-
-	<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
-    <script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
+	<div id="icon"></div>
+	<div id="temp"></div>
+	<div id="conditions"></div>
+	<div id="wind"></div>		
+	<div id="postal"></div>
+	
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 </html>
